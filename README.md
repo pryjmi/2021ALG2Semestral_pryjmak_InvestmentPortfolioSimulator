@@ -1,1 +1,1 @@
-# 2021ALG2Semestral_pryjmak_InvetmentPortfolio
+# 2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator
