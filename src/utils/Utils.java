@@ -130,7 +130,7 @@ public class Utils {
     public static void saveStocksPf(String name, double AssetValue, double AssetQuantity, double Sum) {
             if (AssetValue != 0) {
                 System.out.println(pf.getStocksInfo());
-                System.out.println("Příkazem 'save' uložíte portfolio do externího souboru");
+                System.out.println("Příkazem 'saveU' uložíte portfolio do externího souboru");
             } else {
                 System.out.println("Akciové portfolio nebylo vytvořeno/načteno");
             }

@@ -2,25 +2,25 @@ package utils;
 
 public class TextMessages {
 
-    public static void helpMessage(){
-        System.out.println("Pro seznam příkazů napište 'help' nebo 'h'");
-        System.out.println("Příkaz 'check stocks' slouží ke kontrole akcií");
-        System.out.println("Příkaz 'check crypto' slouží ke kontrole kryptoměn");
-        System.out.println("Příkaz 'buy' slouží k nákupu aktiv v portfoliu");
-        System.out.println("Příkaz 'sell' slouží k prodeji aktiv v portfoliu");
-        System.out.println("Příkaz 'load' slouží k načtení prtofolia ze souboru");
-        System.out.println("Příkaz 'home' vás vrátí na domovskou obrazovku");
-        System.out.println("Příkaz 'exit' ukončí program");
+    public static String helpMessage(){
+        return "Pro seznam příkazů napište 'help' nebo 'h'\n"+
+        "Příkaz 'check stocks' slouží ke kontrole akcií\n"+
+        "Příkaz 'check crypto' slouží ke kontrole kryptoměn\n"+
+        "Příkaz 'buy' slouží k nákupu aktiv v portfoliu\n"+
+        "Příkaz 'sell' slouží k prodeji aktiv v portfoliu\n"+
+        "Příkaz 'load' slouží k načtení prtofolia ze souboru\n"+
+        "Příkaz 'home' vás vrátí na domovskou obrazovku\n"+
+        "Příkaz 'exit' ukončí program\n";
     }
 
-    public static void MainMenu(){
-        System.out.println("Pro seznam příkazů napište 'help' nebo 'h'");
+    public static String MainMenu(){
+        return "Pro seznam příkazů napište 'help' nebo 'h'";
     }
 
-    public static void ManAcc(){
-        System.out.println("Vyberte aktivum");
-        System.out.println("Akcie 'stocks'");
-        System.out.println("Kryptoměny 'crypto'");
+    public static String buyAsset(){
+        return "Vyberte aktivum\n"+
+        "Akcie 'stocks'\n"+
+        "Kryptoměny 'crypto'";
     }
 
     public static String DepositValue(){
@@ -31,24 +31,8 @@ public class TextMessages {
         return "Zadejte dobu (pouze měsíce), po kterou bude vklad uschován.";
     }
 
-    public static String CryptoMenu(){
-        return "Dále je tu možnost 'měsíční investování', kdy po každém měsíci máte možnost zda peníze vyberete/vložíte navíc a zda budete s investicí pokračovat/uzavřete obchod.\n" +
-                "Vyberte typ investování.\n" +
-                "Klasické (na určitou dobu) 'classic'\n" +
-                "Měsíční 'month'";
-    }
-
-    /*
-    public static String cryptoMonthChoice(){
-        return "Vyberte jednu z následujících možností.\n"+
-                "(1) Pokračovat v investici bez vkladu navíc\n"+
-                "(2) Pokračovat v investici s vkladem navíc\n"+
-                "(3) Uzavřít obchod";
-    }
-     */
-
-    public static void savePf(){
-        System.out.println("Portfolio bylo uloženo\n");
+    public static String savePf(){
+        return "Portfolio bylo uloženo\n";
     }
 
 }

@@ -1,5 +1,6 @@
 package ui;
 
+import app.Space;
 import utils.TextMessages;
 import utils.Utils;
 
@@ -8,33 +9,16 @@ import static utils.Utils.*;
 public class UI {
 
     public void beginProgram() {
-        TextMessages.MainMenu();
+        System.out.println(TextMessages.MainMenu());
+        Space assets = new Space();
         do {
             menuChoice = sc.nextLine();
             switch (menuChoice) {
-                case "check stocks": {
-                    saveStocksPf(Stocks.getName(), Stocks.getActStockValue(), Stocks.getActStockQuantity(), Stocks.getActStockSum());
-                    String saveChoice = sc.nextLine();
-                    switch (saveChoice) {
-                        case "save": {
-                            System.out.println("NOT IMPLEMENTED YET");
-                            break;
-                        }
-                    }
-                    break;
-                }
-                case "check crypto": {
-                    saveCryptoPf(Crypto.getName(), Crypto.getActCryptoValue(), Crypto.getActCryptoQuantity(), Crypto.getActCryptoSum());
-                    String saveChoice = sc.nextLine();
-                    switch (saveChoice) {
-                        case "save": {
-                            System.out.println("NOT IMPLEMENTED YET");
-                        }
-                    }
-                    break;
+                case "check": {
+                    assets.checkPortfolios(); break;
                 }
                 case "buy": {
-                    manualAcc();
+                    buyAsset();
                     break;
                 }
                 case "sell": {
@@ -47,7 +31,7 @@ public class UI {
                 }
                 case "h":
                 case "help": {
-                    TextMessages.helpMessage();
+                    System.out.println(TextMessages.helpMessage());
                     break;
                 }
                 case "home": {
@@ -60,24 +44,13 @@ public class UI {
         } while (!menuChoice.equals("exit"));
     }
 
-    private void manualAcc() {
-        TextMessages.ManAcc();
-            menuChoice = sc.nextLine();
-            switch (menuChoice) {
-                case "stocks": {
-                    UIStocks Stocks = new UIStocks();
-                    Stocks.manAccStocks();
-                    break;
-                }
-                case "crypto": {
-                    UICrypto Crypto = new UICrypto();
-                    Crypto.manAccCrypto();
-                    break;
-                }
-                default: {
-                    break;
-                }
-            }
+    private void buyAsset() {
+        TextMessages.buyAsset();
+        Space assets = new Space();
+        choice = sc.nextInt();
+        double deposit = sc.nextDouble();
+        int months = sc.nextInt();
+        assets.buy(choice, deposit, months);
         System.out.println("Příkazem 'home' se dostanete zpět na domovskou obrazovku");
         Utils.Wait();
     }

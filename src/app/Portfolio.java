@@ -52,16 +52,20 @@ public class Portfolio {
     public String getName() {
         return name;
     }
+
     public double getStartDeposit() {
         return startDeposit;
     }
+
     public double getRandomPercent() {
         return randomPercent;
     }
 
+
     public double getStartStockValue() {
         return startStockValue;
     }
+
     public double getStartStockQuantity() {
         return startStockQuantity;
     }

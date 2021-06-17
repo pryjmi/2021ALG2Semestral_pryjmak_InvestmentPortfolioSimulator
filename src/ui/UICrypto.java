@@ -12,7 +12,6 @@ public class UICrypto {
         Portfolio Crypto = new Portfolio();
         Crypto.checkName(2);
         System.out.println(Utils.Description());
-        System.out.println(TextMessages.CryptoMenu());
         menuChoice = sc.nextLine();
         switch (menuChoice) {
             case "classic": {
