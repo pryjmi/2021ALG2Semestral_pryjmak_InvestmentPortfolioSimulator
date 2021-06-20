@@ -34,21 +34,21 @@ Pro komunikaci s uživatelem je použito rozhraní příkazové řádky s využi
 #### Struktura vstupních a výstupních souborů  
 Program nabízí výstupy ve formátech .txt, .csv, .pdf, nebo v binárních souborech.  
 ##### Formátovaný textový soubor a PDF soubor: 
-První řádek obsahuje název portfolia ("KRYPTOMĚNA/AKCIE"), čas a datum uložení informací o portfoliu. Na druhém řádku je formátovaná hlavička k výstupním datům na třetím řádku. 
+První řádek obsahuje název portfolia ("KRYPTOMĚNA"/"AKCIE"), čas a datum uložení informací o portfoliu. Na druhém řádku je formátovaná hlavička k výstupním datům na třetím řádku. 
         
     AKCIE 09:14:41.675 2021-06-20
     Akt. Hodnota Aktiva Akt. Počet Aktiv Akt. Hod. Investice Počát. Hod. Aktiva Počát. Počet Aktiv Počát. Hod. Investice   Měsíc Zisk/Ztráta    %
                4,846416        24,104160          116,818781           4,148662          24,104160            100,000000       3    -9,029262   -7,174734
 
 ##### .csv soubor:  
-První řádek obsahuje název portfolia ("KRYPTOMĚNA/AKCIE"), čas a datum uložení informací o portfoliu. Na druhém řádku je hlavička k výstupním datům na třetím řádku.    
+První řádek obsahuje název portfolia ("KRYPTOMĚNA"/"AKCIE"), čas a datum uložení informací o portfoliu. Na druhém řádku je hlavička k výstupním datům na třetím řádku.    
 
     KRYPTOMĚNA;10:26:59.257;2021-06-20
     Akt. Hodnota Aktiva;Akt. Počet Aktiv;Akt. Hod. Investice;Počát. Hod. Aktiva;Počát. Počet Aktiv;Počát. Hod. Investice;Měsíc;Zisk/Ztráta;%
     23,765938;25,183375;598,506547;3,970874;25,183375;100,000000;4;498,506547;498,506547
 
 ##### .bin soubor: 
-Název portfolia (utf), čas uložení portfolia v sekundách od počátku dne (long), (datum uložení) den v měsíci (integer), (datum uložení) měsíc v roce (integer), (datum uložení) rok (integer), aktuální hodnota aktiva (double), aktuální počet aktiv (double), aktuální hodnota investice (double), počáteční hodnota aktiva (double), počáteční počet aktiv (double), počáteční hodnota investice (double), délka období v měsících (integer), zisk/ztráta (double), procentuální bilance (double)  
+Název portfolia ("KRYPTOMĚNA"/"AKCIE") (utf), čas uložení portfolia v sekundách od počátku dne (long), (datum uložení) den v měsíci (integer), (datum uložení) měsíc v roce (integer), (datum uložení) rok (integer), aktuální hodnota aktiva (double), aktuální počet aktiv (double), aktuální hodnota investice (double), počáteční hodnota aktiva (double), počáteční počet aktiv (double), počáteční hodnota investice (double), délka období v měsících (integer), zisk/ztráta (double), procentuální bilance (double)  
 
 **Z každého výstupního souboru je uživateli umožněno portfolio znovu nahrát.**
 
