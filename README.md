@@ -56,6 +56,18 @@ Název portfolia ("KRYPTOMĚNA"/"AKCIE") (utf), čas uložení portfolia v sekun
 ![Investment_Portfolio](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Semestral.png)
 
 ### Testování
+V testech 1 - 3 bylo testované načtení, výpis a prodej portfolia, data byla čerpána z pdf souboru testStocks.pdf a binárního souboru testCrypto. V testech 4 - 7 bylo testované založení a výpis portfolia. V testech 8 - 9 bylo testováno ošetření nesprávného vstupu do konzole. V testu 10 (a test10_output) bylo testováno ukládání do externího souboru. Reálné výpisy ve všech testech shodovali s předpokládanými výpisy.
+![test1](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test1.png)
+![test2](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test2.png)
+![test3](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test3.png)
+![test4](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test4.png)
+![test5](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test5.png)
+![test6](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test6.png)
+![test7](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test7.png)
+![test8](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test8.png)
+![test9](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test9.png)
+![test10](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test10.png)
+![test10_output](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test10_output.png)
 
 ### Popis fungování externí knihovny - Apache PDFBox®   
 Externí knihovna PDFBox umožňuje vytváření nových PDF dokumentů, manipulaci s existujícími a získávání informací z pdf dokumentů.  
