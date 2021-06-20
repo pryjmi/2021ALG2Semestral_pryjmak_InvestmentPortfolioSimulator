@@ -56,7 +56,7 @@ Název portfolia ("KRYPTOMĚNA"/"AKCIE") (utf), čas uložení portfolia v sekun
 ![Investment_Portfolio](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Semestral.png)
 
 ### Testování
-V testech 1 - 3 bylo testované načtení, výpis a prodej portfolia, data byla čerpána z pdf souboru testStocks.pdf a binárního souboru testCrypto. V testech 4 - 7 bylo testované založení a výpis portfolia. V testech 8 - 9 bylo testováno ošetření nesprávného vstupu do konzole. V testu 10 (a test10_output) bylo testováno ukládání do externího souboru. Reálné výpisy ve všech testech shodovali s předpokládanými výpisy.\
+V testech 1 - 3 bylo testované načtení, výpis a prodej portfolia, data byla čerpána z pdf souboru testStocks.pdf a binárního souboru testCrypto. V testech 4 - 7 bylo testované založení a výpis portfolia. V testech 8 - 9 bylo testováno ošetření nesprávného vstupu do konzole. V testu 10 (a test10_output) bylo testováno ukládání do externího souboru. Reálné výpisy ve všech testech se shodovaly s předpokládanými výpisy.\
 test1
 ![test1](https://github.com/pryjmi/2021ALG2Semestral_pryjmak_InvestmentPortfolioSimulator/blob/main/Testing_screens/test1.png)
 test2
