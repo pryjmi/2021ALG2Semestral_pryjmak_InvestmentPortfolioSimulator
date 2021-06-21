@@ -66,7 +66,7 @@ public class UI {
                 break;
                 }
         } catch (Exception e) {
-            System.out.println("Chyba");
+            System.out.print("");;
         }
     }
 
@@ -105,12 +105,19 @@ public class UI {
                 System.out.println(TextMessages.DepositValue());
                 try {
                     deposit = sc.nextDouble();
-                    System.out.println(TextMessages.Period());
-                    period = sc.nextInt();
-                    if (db.buy(0, deposit, period)) {
-                        bought(0);
+                    if (deposit > 0) {
+                        System.out.println(TextMessages.Period());
+                        period = sc.nextInt();
+                        if (period > 0) {
+                            if (db.buy(0, deposit, period)) {
+                                bought(0);
+                            } else {
+                                System.out.println(TextMessages.pfStocksExists());
+                            }
+                        } else {}
+                        System.out.println("Pouze kladnou nenulovou hodnotu!");
                     } else {
-                        System.out.println(TextMessages.pfStocksExists());
+                        System.out.println("Pouze kladnou nenulovou hodnotu!");
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("");
@@ -123,12 +130,20 @@ public class UI {
                 try {
                 System.out.println(TextMessages.DepositValue());
                 deposit = sc.nextDouble();
-                System.out.println(TextMessages.Period());
-                period = sc.nextInt();
-                if (db.buy(1, deposit, period)) {
-                    bought(1);
+                if (deposit > 0) {
+                    System.out.println(TextMessages.Period());
+                    period = sc.nextInt();
+                    if (period > 0) {
+                        if (db.buy(1, deposit, period)) {
+                            bought(1);
+                        } else {
+                            System.out.println(TextMessages.pfCryptoExists());
+                        }
+                    } else {
+                        System.out.println("Pouze kladnou nenulovou hodnotu!");
+                    }
                 } else {
-                    System.out.println(TextMessages.pfCryptoExists());
+                    System.out.println("Pouze kladnou nenulovou hodnotu!");
                 }
                 } catch (InputMismatchException e) {
                     System.out.println("");
