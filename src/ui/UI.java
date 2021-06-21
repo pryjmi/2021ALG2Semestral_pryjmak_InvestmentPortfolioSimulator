@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class UI {
 
-    public static Dashboard db;
+    public static Dashboard db = new Dashboard();
     public static boolean end = false;
     public static Scanner sc = new Scanner(System.in);
 
@@ -21,7 +21,6 @@ public class UI {
      * @param args
      */
     public static void main(String[] args) {
-        db = new Dashboard();
         System.out.println(TextMessages.MainMenu());
         while (!end) {
             run();
@@ -32,6 +31,7 @@ public class UI {
      * Works as main menu
      */
     public static void run() {
+        try {
         String[] parts = sc.nextLine().split(" ");
         switch (parts[0]) {
             case "help":
@@ -64,6 +64,9 @@ public class UI {
                 break;
             default:
                 break;
+                }
+        } catch (Exception e) {
+            System.out.println("Chyba");
         }
     }
 
