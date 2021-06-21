@@ -37,7 +37,7 @@ Program nabízí výstupy ve formátech .txt, .csv, .pdf, nebo v binárních sou
 První řádek obsahuje název portfolia ("KRYPTOMĚNA"/"AKCIE"), čas typu LocalTime a datum typu LocalDate uložení informací o portfoliu. Na druhém řádku je formátovaná hlavička s jednotlivými nadpisy oddělenými mezerou k výstupním datům na třetím řádku. 
         
     AKCIE 09:14:41.675 2021-06-20
-    Akt. Hodnota Aktiva Akt. Počet Aktiv Akt. Hod. Investice Počát. Hod. Aktiva Počát. Počet Aktiv Počát. Hod. Investice   Měsíc Zisk/Ztráta    %
+    Akt.-Hodnota-Aktiva Akt.-Počet-Aktiv Akt.-Hod.-Investice Počát.-Hod.-Aktiva Počát.-Počet-Aktiv Počát.-Hod.-Investice   Měsíc Zisk/Ztráta    %
                4,846416        24,104160          116,818781           4,148662          24,104160            100,000000       3    -9,029262   -7,174734
 
 ##### .csv soubor:  
