@@ -116,8 +116,10 @@ public class UI {
                             }
                         } else {}
                         System.out.println("Pouze kladnou nenulovou hodnotu!");
+                        System.out.println(TextMessages.helpMessage());
                     } else {
                         System.out.println("Pouze kladnou nenulovou hodnotu!");
+                        System.out.println(TextMessages.helpMessage());
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("");

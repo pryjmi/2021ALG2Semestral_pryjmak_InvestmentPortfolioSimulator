@@ -24,7 +24,8 @@ public class TextMessages {
      * @return main menu message
      */
     public static String MainMenu(){
-        return "Pro seznam příkazů napište 'help' nebo 'h'";
+        return "Hlavní menu\n" +
+                "Pro seznam příkazů napište 'help' nebo 'h'";
     }
 
     /**
