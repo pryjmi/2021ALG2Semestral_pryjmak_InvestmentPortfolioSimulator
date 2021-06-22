@@ -34,14 +34,14 @@ Pro komunikaci s uživatelem je použito rozhraní příkazové řádky s využi
 #### Struktura vstupních a výstupních souborů  
 Program nabízí výstupy ve formátech .txt, .csv, .pdf, nebo v binárních souborech.  
 ##### Formátovaný textový soubor a PDF soubor: 
-První řádek obsahuje název portfolia ("KRYPTOMĚNA"/"AKCIE"), čas typu LocalTime a datum typu LocalDate uložení informací o portfoliu. Na druhém řádku je formátovaná hlavička s jednotlivými nadpisy oddělenými mezerou k výstupním datům na třetím řádku. 
+První řádek obsahuje název portfolia ("KRYPTOMĚNA"/"AKCIE"), čas typu LocalTime a datum typu LocalDate zformátované podle DateTimeFormatter.ISO_DATE uložení informací o portfoliu. Na druhém řádku je formátovaná hlavička s jednotlivými nadpisy oddělenými mezerou k výstupním datům na třetím řádku. 
         
     AKCIE 09:14:41.675 2021-06-20
     Akt.-Hodnota-Aktiva Akt.-Počet-Aktiv Akt.-Hod.-Investice Počát.-Hod.-Aktiva Počát.-Počet-Aktiv Počát.-Hod.-Investice   Měsíc Zisk/Ztráta    %
                4,846416        24,104160          116,818781           4,148662          24,104160            100,000000       3    -9,029262   -7,174734
 
 ##### .csv soubor:  
-První řádek obsahuje název portfolia ("KRYPTOMĚNA"/"AKCIE"), čas typu LocalTime a datum typu LocalDate uložení informací o portfoliu. Na druhém řádku je hlavička s jednotlivými nadpisy oddělenými středníkem k výstupním datům na třetím řádku.    
+První řádek obsahuje název portfolia ("KRYPTOMĚNA"/"AKCIE"), čas typu LocalTime a datum typu LocalDate zformátované podle DateTimeFormatter.ISO_DATE uložení informací o portfoliu. Na druhém řádku je hlavička s jednotlivými nadpisy oddělenými středníkem k výstupním datům na třetím řádku.    
 
     KRYPTOMĚNA;10:26:59.257;2021-06-20
     Akt. Hodnota Aktiva;Akt. Počet Aktiv;Akt. Hod. Investice;Počát. Hod. Aktiva;Počát. Počet Aktiv;Počát. Hod. Investice;Měsíc;Zisk/Ztráta;%
